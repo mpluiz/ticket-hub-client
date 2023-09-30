@@ -1,4 +1,8 @@
 :root {
+    --font-family: 'Roboto', sans-serif;
+    --font-weigth-regular: 400;
+    --font-weigth-medium: 500;
+    --font-weigth-bold: 700;
     --brand-color-blue: rgba(64, 112, 244, 1);
     --brand-color-green: rgba(43, 214, 123, 1);
     --brand-color-black: rgba(10, 33, 86, 1);

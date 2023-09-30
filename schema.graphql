@@ -1,0 +1,99 @@
+# This file was generated. Do not edit manually.
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Address {
+  city: String!
+  country: String!
+  createdAt: DateTime!
+  id: UUID!
+  state: String!
+  ticketId: UUID!
+}
+
+type Cart {
+  cartItems: [CartItem!]
+  createdAt: DateTime!
+  id: UUID!
+  subTotal: Int!
+  total: Int!
+  updatedAt: DateTime
+}
+
+type CartItem {
+  cart: Cart
+  cartId: UUID!
+  createdAt: DateTime!
+  id: UUID!
+  quantity: Int!
+  ticket: Ticket
+  ticketId: UUID!
+}
+
+type Mutation {
+  _empty: Boolean!
+}
+
+type PageInfo {
+  page: Int!
+  perPage: Int!
+  totalItems: Int!
+  totalPages: Int!
+}
+
+type PaginatedTickets {
+  pageInfo: PageInfo
+  tickets: [Ticket!]
+}
+
+type Price {
+  amount: Int!
+  createdAt: DateTime!
+  discount: Int!
+  id: UUID!
+  ticketId: UUID!
+}
+
+type Query {
+  _empty: Boolean!
+  cart(id: UUID!): Cart
+  carts: [Cart!]
+  paginatedTickets(pagination: PaginationInput): PaginatedTickets
+  ticket(id: UUID!): Ticket
+  tickets: [Ticket!]
+}
+
+type Review {
+  createdAt: DateTime!
+  id: UUID!
+  ticketId: UUID!
+  value: Int!
+}
+
+type Ticket {
+  address: Address
+  amenities: [String!]
+  cartItems: [CartItem!]
+  createdAt: DateTime!
+  description: String!
+  id: UUID!
+  imageUrl: String!
+  name: String!
+  price: Price
+  reviews: [Review!]
+  updatedAt: DateTime
+}
+
+"A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar."
+scalar DateTime
+
+"A field whose value is a generic Universally Unique Identifier: https://en.wikipedia.org/wiki/Universally_unique_identifier."
+scalar UUID
+
+input PaginationInput {
+  page: Int!
+  perPage: Int!
+}

@@ -3,33 +3,36 @@
     --font-weigth-regular: 400;
     --font-weigth-medium: 500;
     --font-weigth-bold: 700;
+
     --brand-color-blue: rgba(64, 112, 244, 1);
     --brand-color-green: rgba(43, 214, 123, 1);
     --brand-color-black: rgba(10, 33, 86, 1);
-    --support--support-05: rgba(60, 76, 112, 1);
-    --support--support-01: rgba(64, 112, 244, 1);
-    --support--support-02: rgba(11, 176, 123, 1);
-    --support--support-03: rgba(255, 173, 13, 1);
-    --support--support-04: rgba(240, 61, 61, 1);
-    --gray--gray-00: rgba(255, 255, 255, 1);
-    --gray--gray-10: rgba(231, 233, 237, 1);
-    --gray--gray-20: rgba(206, 210, 219, 1);
-    --gray--gray-30: rgba(182, 188, 201, 1);
-    --gray--gray-40: rgba(158, 165, 184, 1);
-    --gray--gray-50: rgba(133, 143, 166, 1);
-    --gray--gray-60: rgba(109, 121, 148, 1);
-    --gray--gray-70: rgba(85, 98, 130, 1);
-    --gray--gray-80: rgba(60, 76, 112, 1);
-    --gray--gray-90: rgba(36, 54, 94, 1);
-    --gray--gray-100: rgba(11, 31, 77, 1);
+
+    --support-05: rgba(60, 76, 112, 1);
+    --support-01: rgba(64, 112, 244, 1);
+    --support-02: rgba(11, 176, 123, 1);
+    --support-03: rgba(255, 173, 13, 1);
+    --support-04: rgba(240, 61, 61, 1);
+
+    --gray-00: rgba(255, 255, 255, 1);
+    --gray-10: rgba(231, 233, 237, 1);
+    --gray-20: rgba(206, 210, 219, 1);
+    --gray-30: rgba(182, 188, 201, 1);
+    --gray-40: rgba(158, 165, 184, 1);
+    --gray-50: rgba(133, 143, 166, 1);
+    --gray-60: rgba(109, 121, 148, 1);
+    --gray-70: rgba(85, 98, 130, 1);
+    --gray-80: rgba(60, 76, 112, 1);
+    --gray-90: rgba(36, 54, 94, 1);
+    --gray-100: rgba(11, 31, 77, 1);
 
     --display: 55px;
     --heading-1: 40px;
     --heading-2: 24px;
     --heading-3: 22px;
+
     --paragraph-1: 20px;
     --paragraph-2: 16px;
-    --paragraph-22: 16px;
     --paragraph-3: 14px;
     --paragraph-4: 12px;
 

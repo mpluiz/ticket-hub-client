@@ -1,0 +1,47 @@
+.text {
+  font-family: var(--font-family);
+
+  &--color-white {
+    color: var(--gray-00);
+  }
+
+  &--color-black {
+    color: var(--brand-color-black);
+  }
+
+  &--color-blue {
+    color: var(--brand-color-blue);
+  }
+
+  &--color-green {
+    color: var(--brand-color-green);
+  }
+
+  &--size-sm {
+    font-size: var(--paragraph-4);
+  }
+
+  &--size-nm {
+    font-size: var(--paragraph-3);
+  }
+
+  &--size-md {
+    font-size: var(--paragraph-2);
+  }
+
+  &--size-lg {
+    font-size: var(--paragraph-1);
+  }
+
+  &--weight-regular {
+    font-weight: var(--font-weigth-regular);
+  }
+
+  &--weight-medium {
+    font-weight: var(--font-weigth-medium);
+  }
+
+  &--weight-bold {
+    font-weight: var(--font-weigth-bold);
+  }
+}

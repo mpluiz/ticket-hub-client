@@ -1,0 +1,47 @@
+.heading {
+  font-family: var(--font-family);
+
+  &--color-white {
+    color: var(--gray-00);
+  }
+
+  &--color-black {
+    color: var(--brand-color-black);
+  }
+
+  &--color-blue {
+    color: var(--brand-color-blue);
+  }
+
+  &--color-green {
+    color: var(--brand-color-green);
+  }
+
+  &--size-h3 {
+    font-size: var(--heading-3);
+  }
+
+  &--size-h2 {
+    font-size: var(--heading-2);
+  }
+
+  &--size-h1 {
+    font-size: var(--heading-1);
+  }
+
+  &--size-display {
+    font-size: var(--display);
+  }
+
+  &--weight-regular {
+    font-weight: var(--font-weigth-regular);
+  }
+
+  &--weight-medium {
+    font-weight: var(--font-weigth-medium);
+  }
+
+  &--weight-bold {
+    font-weight: var(--font-weigth-bold);
+  }
+}

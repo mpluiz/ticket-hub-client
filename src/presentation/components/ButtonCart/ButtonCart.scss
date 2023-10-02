@@ -1,0 +1,14 @@
+.button-cart {
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-xs);
+  }
+
+  &__quantity {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 100%;
+    padding: var(--spacing-xxs) var(--spacing-xs);
+  }
+}

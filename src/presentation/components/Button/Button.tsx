@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 import { ComponentProps, Text } from '@/presentation/components'
 import '@/presentation/components/Button/Button.scss'
 
-export interface BaseButtonProps extends ComponentProps<HTMLButtonElement> {
+export interface ButtonProps extends ComponentProps<HTMLButtonElement> {
   type?: 'button' | 'submit'
   variant?: 'primary' | 'secondary'
   size?: 'sm' | 'md' | 'lg'
@@ -12,16 +12,17 @@ export interface BaseButtonProps extends ComponentProps<HTMLButtonElement> {
 
 export function Button({
   children,
+  className,
   type = 'button',
   variant = 'primary',
   size = 'md',
   disabled = false,
   icon,
   ...others
-}: BaseButtonProps) {
+}: ButtonProps) {
   return (
     <button
-      className={`button button--${variant} button--size-${size}`}
+      className={`button button--${variant} button--size-${size} ${className ?? ''}`}
       type={type}
       disabled={disabled}
       {...others}

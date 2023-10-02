@@ -36,6 +36,22 @@
     --paragraph-3: 14px;
     --paragraph-4: 12px;
 
+    --spacing-xxs: 4px;
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    --spacing-xxxl: 64px;
+
+    --border-width: 1px;
+    --border-radius-xs: 4px;
+    --border-radius-sm: 6px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+
     --shadow-s: 0px 2px 4px rgba(11, 31, 77, 0.08);
     --shadow-m: 0px 4px 8px rgba(11, 31, 77, 0.1);
     --shadow-l: 0px 8px 16px rgba(11, 31, 77, 0.12);

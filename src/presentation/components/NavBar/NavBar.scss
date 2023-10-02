@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--gray-00);
+  height: 98px;
+  border-bottom: 0.8px solid var(--gray-10);
+  padding: var(--spacing-lg) var(--spacing-xxxl);
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+  }
+
+  &__quotation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    cursor: pointer;
+  }
+
+  &__signin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-xxs);
+    border-left: var(--border-width) solid #ccc;
+    padding-left: var(--spacing-md);
+    cursor: pointer;
+  }
+}

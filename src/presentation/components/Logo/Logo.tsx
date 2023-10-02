@@ -6,7 +6,7 @@ export function Logo() {
   return (
     <div className="logo">
       <IconLogo size={48} />
-      <Heading size="h1" weigth="bold">TicketHub</Heading>
+      <Heading size="h1" weigth="bold">TicketHub•</Heading>
     </div>
   )
 }

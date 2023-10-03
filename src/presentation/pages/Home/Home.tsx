@@ -1,5 +1,5 @@
 import { FormEvent } from 'react'
-import { NavBar, SearchBar } from '@/presentation/components'
+import { Container, Filter, NavBar, SearchBar } from '@/presentation/components'
 import '@/presentation/pages/Home/Home.scss'
 
 export function HomePage() {
@@ -11,6 +11,10 @@ export function HomePage() {
     <>
       <NavBar />
       <SearchBar onSubmit={handleSubmit} />
+
+      <Container className="home-page">
+        <Filter />
+      </Container>
     </>
   )
 }

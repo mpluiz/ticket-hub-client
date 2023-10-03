@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--container-color-gray);
+    -webkit-font-smoothing: antialiased;
+}
+
+#root {
+    height: 100vh;
+}

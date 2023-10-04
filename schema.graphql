@@ -18,8 +18,8 @@ type Cart {
   cartItems: [CartItem!]
   createdAt: DateTime!
   id: UUID!
-  subTotal: Int!
-  total: Int!
+  subTotal: Float!
+  total: Float!
   updatedAt: DateTime
 }
 
@@ -50,11 +50,12 @@ type PaginatedTickets {
 }
 
 type Price {
-  amount: Int!
   createdAt: DateTime!
-  discount: Int!
+  discount: Float!
   id: UUID!
+  originalValue: Float!
   ticketId: UUID!
+  value: Float!
 }
 
 type Query {
@@ -70,7 +71,7 @@ type Review {
   createdAt: DateTime!
   id: UUID!
   ticketId: UUID!
-  value: Int!
+  value: Float!
 }
 
 type Ticket {

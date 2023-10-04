@@ -14,6 +14,10 @@ export const Default: Story = {
   args: { children: 'Primary' }
 }
 
+export const Loading: Story = {
+  args: { children: 'Primary', loading: true }
+}
+
 export const Icon: Story = {
   args: { children: 'Primary', icon: <IconArrowUpRight /> }
 }

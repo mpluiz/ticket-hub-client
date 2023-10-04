@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { ComponentProps, Text } from '@/presentation/components'
+import { ComponentProps, Loader, Text } from '@/presentation/components'
 import '@/presentation/components/Button/Button.scss'
 
 export interface ButtonProps extends ComponentProps<HTMLButtonElement> {
@@ -8,6 +8,7 @@ export interface ButtonProps extends ComponentProps<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg'
   icon?: ReactNode
   disabled?: boolean
+  loading?: boolean
 }
 
 export function Button({
@@ -17,6 +18,7 @@ export function Button({
   variant = 'primary',
   size = 'md',
   disabled = false,
+  loading = false,
   icon,
   ...others
 }: ButtonProps) {
@@ -24,11 +26,12 @@ export function Button({
     <button
       className={`button button--${variant} button--size-${size} ${className ?? ''}`}
       type={type}
-      disabled={disabled}
+      disabled={disabled || loading}
       {...others}
     >
       <Text>{children}</Text>
-      {icon && icon}
+      {loading && <Loader size={size} />}
+      {(icon && !loading) && icon}
     </button>
   )
 }

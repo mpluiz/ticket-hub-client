@@ -1,0 +1,87 @@
+.ticket-item {
+  display: flex;
+  background: var(--gray-00);
+  box-shadow: var(--shadow-s);
+
+  &__image {
+    position: relative;
+    max-height: calc(var(--spacing-xxxl) * 4);
+
+    > img {
+      max-width: calc(var(--spacing-xxxl) * 4);
+      max-height: calc(var(--spacing-xxxl) * 4);
+      object-fit: cover;
+    }
+
+    span {
+      position: absolute;
+      left: var(--spacing-sm);
+      top: var(--spacing-sm);
+      background: var(--gray-00);
+      padding: var(--spacing-xxs) var(--spacing-sm);
+      border-radius: var(--spacing-md);
+    }
+
+    .icon {
+      position: absolute;
+      right: var(--spacing-sm);
+      top: var(--spacing-sm);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--spacing-lg);
+
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: var(--spacing-xxl);
+        border-right: var(--border-width) solid var(--gray-10);
+
+        .header {
+          display: flex;
+          flex-direction: column;
+          gap: var(--spacing-xs);
+
+          .text {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-xxs);
+          }
+        }
+      }
+
+      .price {
+        display: flex;
+        flex-direction: column;
+        padding-left: var(--spacing-lg);
+        gap: var(--spacing-xxxs);
+
+        > :first-child {
+          color: var(--gray-50);
+        }
+
+        > div {
+          display: flex;
+          gap: var(--spacing-xxxs);
+        }
+
+        > button {
+          margin-top: var(--spacing-lg);
+        }
+      }
+    }
+  }
+}

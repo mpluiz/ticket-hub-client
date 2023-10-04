@@ -1,0 +1,17 @@
+.review {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+
+  button {
+    padding: var(--spacing-sm);
+
+    &:active {
+      opacity: unset;
+    }
+  }
+
+  >:last-child {
+    color: var(--gray-40);
+  }
+}

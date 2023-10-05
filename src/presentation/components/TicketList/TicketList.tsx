@@ -13,7 +13,6 @@ export function TicketList({ tickets }: TicketListProps) {
           key={ticket.id}
           id={ticket.id}
           name={ticket.name}
-          description={ticket.description}
           imageUrl={ticket.imageUrl}
           price={ticket.price}
           address={ticket.address}

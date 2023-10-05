@@ -1,3 +1,5 @@
 .container {
+  display: flex;
   padding: var(--spacing-lg) var(--spacing-xxxl);
+  gap: var(--spacing-lg);
 }

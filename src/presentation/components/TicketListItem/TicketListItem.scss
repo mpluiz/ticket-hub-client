@@ -8,8 +8,8 @@
     max-height: calc(var(--spacing-xxxl) * 4);
 
     > img {
-      max-width: calc(var(--spacing-xxxl) * 4);
-      max-height: calc(var(--spacing-xxxl) * 4);
+      width: calc(var(--spacing-xxxl) * 4);
+      height: calc(var(--spacing-xxxl) * 4);
       object-fit: cover;
     }
 

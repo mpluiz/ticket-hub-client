@@ -21,7 +21,6 @@ interface Review {
 export interface TicketListItemProps {
   id: string
   name: string
-  description: string
   imageUrl: string
   price: Price
   address: Address

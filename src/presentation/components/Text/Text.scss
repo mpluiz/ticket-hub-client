@@ -17,6 +17,10 @@
     color: var(--brand-color-green);
   }
 
+  &--color-gray {
+    color: var(--gray-50);
+  }
+
   &--size-sm {
     font-size: var(--paragraph-4);
   }

@@ -4,7 +4,7 @@ import '@/presentation/components/Text/Text.scss'
 interface TextProps extends ComponentProps<HTMLParagraphElement> {
   size?: 'sm' | 'nm' | 'md' | 'lg'
   weigth?: 'regular' | 'medium' | 'bold'
-  color?: 'white' | 'black' | 'blue' | 'green'
+  color?: 'white' | 'black' | 'blue' | 'green' | 'gray'
 }
 
 export function Text({

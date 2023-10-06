@@ -62,7 +62,7 @@ type Query {
   _empty: Boolean!
   cart(id: UUID!): Cart
   carts: [Cart!]
-  paginatedTickets(pagination: PaginationInput): PaginatedTickets
+  paginatedTickets(searchOptions: SearchOptionsInput): PaginatedTickets
   ticket(id: UUID!): Ticket
   tickets: [Ticket!]
 }
@@ -97,4 +97,9 @@ scalar UUID
 input PaginationInput {
   page: Int!
   perPage: Int!
+}
+
+input SearchOptionsInput {
+  pagination: PaginationInput
+  term: String
 }

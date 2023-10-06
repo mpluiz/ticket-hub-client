@@ -14,7 +14,7 @@ export function SearchBar({ value, maxLength = 255, onChange, onSubmit }: Search
     <div className="search-bar">
       <form className="search-bar__field" onSubmit={onSubmit}>
         <IconPinLocation size={24} color="var(--brand-color-blue)" />
-        <input placeholder="Busque por atração" value={value} onChange={onChange} maxLength={maxLength} />
+        <input name="search" placeholder="Busque por atração" value={value} onChange={onChange} maxLength={maxLength} />
         <button type="submit"><IconSearch size={24} color="var(--brand-color-blue)" /></button>
       </form>
     </div>

@@ -3,9 +3,10 @@ import '@/presentation/components/TicketList/TicketList.scss'
 
 interface TicketListProps {
   tickets: TicketListItemProps[],
+  onItemClick: (id: string) => void
 }
 
-export function TicketList({ tickets }: TicketListProps) {
+export function TicketList({ tickets, onItemClick }: TicketListProps) {
   return (
     <div className="ticket-list">
       {tickets && tickets.map(ticket => (
@@ -17,7 +18,7 @@ export function TicketList({ tickets }: TicketListProps) {
           price={ticket.price}
           address={ticket.address}
           reviews={ticket.reviews}
-          onClick={ticket.onClick}
+          onClick={onItemClick}
         />
       ))}
     </div>

@@ -1,6 +1,6 @@
 import '@/presentation/components/Loader/Loader.scss'
 
-type LoaderProps = { size?: 'sm' | 'md'| 'lg' }
+type LoaderProps = { size?: 'sm' | 'md'| 'lg' | 'display' }
 
 export function Loader({ size = 'md' }:LoaderProps) {
   return (

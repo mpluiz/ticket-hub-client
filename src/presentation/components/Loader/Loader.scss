@@ -2,6 +2,11 @@
   --duration: 3s;
   display: inline-block;
 
+  &--size-sm {
+    width: var(--spacing-md);
+    height: var(--spacing-md);
+  }
+
   &--size-md {
     width: var(--spacing-lg);
     height: var(--spacing-lg);
@@ -10,6 +15,11 @@
   &--size-lg {
     width: var(--spacing-xl);
     height: var(--spacing-xl);
+  }
+
+  &--size-display {
+    width: calc(var(--spacing-xxl) * 2);
+    height: calc(var(--spacing-xxl) * 2);
   }
 
   svg {

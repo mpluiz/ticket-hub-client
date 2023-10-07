@@ -1,5 +1,6 @@
 export * from '@/presentation/components/icons/IconAirLineTicket.tsx'
 export * from '@/presentation/components/icons/IconApartment.tsx'
+export * from '@/presentation/components/icons/IconArrowUpLeft.tsx'
 export * from '@/presentation/components/icons/IconArrowUpRight.tsx'
 export * from '@/presentation/components/icons/IconCoffee.tsx'
 export * from '@/presentation/components/icons/IconHeart.tsx'

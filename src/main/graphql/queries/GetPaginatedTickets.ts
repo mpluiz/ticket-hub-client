@@ -1,36 +1,36 @@
 import { gql } from '@apollo/client'
 
 export default gql`
-query GetPaginatedTickets($searchOptions: SearchOptionsInput) {
-  paginatedTickets(searchOptions: $searchOptions) {
-    pageInfo {
-      page
-      perPage
-      totalItems
-      totalPages
-    }
-
-    tickets {
-      id
-      name
-      imageUrl
-      amenities
-
-      address {
-        city
-        state
+  query GetPaginatedTickets($searchOptions: SearchOptionsInput) {
+    paginatedTickets(searchOptions: $searchOptions) {
+      pageInfo {
+        page
+        perPage
+        totalItems
+        totalPages
       }
 
-      price {
-        originalValue
-        value
-        discount
-      }
+      tickets {
+        id
+        name
+        imageUrl
+        amenities
 
-      reviews {
-        value
+        address {
+          city
+          state
+        }
+
+        price {
+          originalValue
+          value
+          discount
+        }
+
+        reviews {
+          value
+        }
       }
     }
   }
-}
 `

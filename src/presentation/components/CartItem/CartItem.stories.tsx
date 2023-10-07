@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { CartItem } from '@/presentation/components'
-import { currencyFormat } from '@/utils/number-format.ts'
+import { currencyFormat } from '@/utils'
 
 const meta: Meta<typeof CartItem> = {
   component: CartItem,

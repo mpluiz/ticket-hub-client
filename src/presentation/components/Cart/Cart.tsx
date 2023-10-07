@@ -1,5 +1,5 @@
 import { useOutsideClick } from '@/presentation/hooks'
-import { currencyFormat } from '@/utils/number-format.ts'
+import { currencyFormat } from '@/utils'
 import { Button, CartItem, Heading, Separator, Text } from '@/presentation/components'
 import '@/presentation/components/Cart/Cart.scss'
 

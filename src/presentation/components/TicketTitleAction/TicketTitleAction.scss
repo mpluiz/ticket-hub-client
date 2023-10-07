@@ -1,0 +1,20 @@
+.ticket-title-action {
+  display: flex;
+  gap: var(--spacing-md);
+
+  &__action {
+    cursor: pointer;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+
+    .text {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xxs);
+    }
+  }
+}

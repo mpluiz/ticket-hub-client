@@ -1,0 +1,32 @@
+.ticket-buy-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background: var(--gray-00);
+  height: fit-content;
+  border-radius: var(--border-radius-md);
+
+  &__date-select, &__ticket-select, &__ticket-quantity, &__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > div {
+      display: flex;
+      gap: var(--spacing-md);
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-xs);
+      }
+    }
+  }
+
+  > button {
+    .text {
+      font-weight: var(--font-weigth-bold);
+    }
+  }
+}

@@ -1,10 +1,16 @@
 .home-page {
+  flex-direction: column;
 
-  .filter {
-    width: 33%;
-  }
+  .content {
+    display: flex;
+    gap: var(--spacing-lg);
 
-  .ticket-list {
-    width: 66%;
+    .filter {
+      width: 33%;
+    }
+
+    .ticket-list {
+      width: 66%;
+    }
   }
 }

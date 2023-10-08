@@ -1,0 +1,11 @@
+.amenities {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-xxs);
+  }
+}

@@ -1,3 +1,4 @@
+export * from '@/presentation/components/Amenities/Amenities.tsx'
 export * from '@/presentation/components/Button/Button.tsx'
 export * from '@/presentation/components/ButtonCart/ButtonCart.tsx'
 export * from '@/presentation/components/core/component.ts'

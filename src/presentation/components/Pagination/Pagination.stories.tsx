@@ -12,7 +12,7 @@ type Story = StoryObj<typeof Pagination>
 
 export const Default: Story = {
   args: {
-    numberOfPages: 3,
+    numberOfPages: 6,
     numberOfItems: 31,
     page: 1
   }

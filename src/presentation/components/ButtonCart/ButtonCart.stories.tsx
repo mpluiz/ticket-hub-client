@@ -10,4 +10,6 @@ const meta: Meta<typeof ButtonCart> = {
 export default meta
 type Story = StoryObj<typeof ButtonCart>
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: { quantity: 0 }
+}

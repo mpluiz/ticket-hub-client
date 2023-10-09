@@ -3,7 +3,7 @@ import { SearchBar } from '@/presentation/components'
 
 const meta: Meta<typeof SearchBar> = {
   component: SearchBar,
-  title: 'App/SearchBar'
+  title: 'Form/SearchBar'
 }
 
 export default meta

@@ -3,7 +3,7 @@ import { IconShopCart } from '@/presentation/components/icons'
 import '@/presentation/components/ButtonCart/ButtonCart.scss'
 
 export interface ButtonCartProps extends ButtonProps {
-  quantity?: number
+  quantity: number
   onClick?: () => void
 }
 

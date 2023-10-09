@@ -1,5 +1,6 @@
 [//]: # ([![MIT License]&#40;https://img.shields.io/apm/l/atomic-design-ui.svg?&#41;]&#40;https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs&#41;)
 [![Tests](https://github.com/mpluiz/ticket-hub-client/actions/workflows/ci.yml/badge.svg)](https://github.com/mpluiz/ticket-hub-client/actions/workflows/ci.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/377a4a0a-1a79-490c-b5cc-46d8fa2c139b/deploy-status)](https://app.netlify.com/sites/tickethubapp/deploys)
 
 ![logo](./docs/cover.jpg 'Cover')
 

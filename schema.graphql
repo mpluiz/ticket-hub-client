@@ -29,12 +29,17 @@ type CartItem {
   createdAt: DateTime!
   id: UUID!
   quantity: Int!
+  subTotal: Float!
   ticket: Ticket
   ticketId: UUID!
 }
 
 type Mutation {
   _empty: Boolean!
+  createCart: Cart
+  createCartItem(data: CreateCartItemInput!): CartItem
+  deleteCartItem(id: UUID!): Boolean!
+  recalculateCart(id: UUID!): Cart
 }
 
 type PageInfo {
@@ -93,6 +98,13 @@ scalar DateTime
 
 "A field whose value is a generic Universally Unique Identifier: https://en.wikipedia.org/wiki/Universally_unique_identifier."
 scalar UUID
+
+input CreateCartItemInput {
+  cartId: UUID!
+  quantity: Int!
+  subTotal: Float!
+  ticketId: UUID!
+}
 
 input PaginationInput {
   page: Int!

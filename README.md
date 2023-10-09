@@ -22,6 +22,8 @@ Required*
 
 `VITE_SERVER_URL`*
 
+`VITE_APP_URL`
+
 `VITE_SENTRY_DNS`
 
 ## Installation

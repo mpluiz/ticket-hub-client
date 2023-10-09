@@ -1,4 +1,23 @@
 .ticket-page {
   display: flex;
   flex-direction: column;
+
+  &__content {
+    padding: 0;
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      width: 66%;
+      gap: var(--spacing-lg);
+
+      .text {
+        line-height: 1.6;
+      }
+    }
+
+    .ticket-buy-actions {
+      width: 33%;
+    }
+  }
 }

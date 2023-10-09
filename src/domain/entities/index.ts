@@ -1,0 +1,6 @@
+export * from '@/domain/entities/ticket'
+export * from '@/domain/entities/cart'
+export * from '@/domain/entities/address'
+export * from '@/domain/entities/price'
+export * from '@/domain/entities/review'
+export * from '@/domain/entities/cart-item'

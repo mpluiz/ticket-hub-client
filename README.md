@@ -6,8 +6,8 @@
 
 # TICKET HUB
 
-- [app](https://tickethub.mpluiz.com.br)
-- [storybook](https://storybook.tickethub.mpluiz.com.br)
+- [app](https://tickethub.marcosluiz.dev)
+- [storybook](https://storybook.tickethub.marcosluiz.dev)
 
 ## Roadmap
 
